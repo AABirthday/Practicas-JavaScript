@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+body {
+	background: #FAFAFA;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+ 
+.wrap {/* Centrar */
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+ 
+/* Header */
+.principal {
+	background: #47caebdc;/*Header Medio*/
+	border-top: 20px solid #020607dc;/*Header Superior*/
+	color: #fff;
+	padding: 15px 0;/* Tamaño del Header */
+	width: 100%;
+}
+ 
+.principal .formulario {
+	color: #212121;
+	text-align: center;
+}
+ 
+/* Text Field donde se agrega el texto para crear nueva tarea */
+.principal .formulario input[type=text] {
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+}
+ 
+/* Se resaltan los colores del Text Field cuando no se agrega una vacia*/
+.principal .formulario input[type=text].error {
+	border: 5px solid #D32F2F;
+	color: red;
+}
+ 
+/* Boton de agregar tarea */
+.principal .formulario .boton {
+	background: none;
+	border: 1px solid #000000;/* Color del borde */
+	color: #fff; /* Color de la letra*/
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+ 
+/* Resaltado del boton agregar tarea cuando esta en estado Hover */
+.principal .formulario .boton:hover {
+	border: 1px solid #fff;
+}
+ 
+/* - Tareas - */
+.tareas .lista {
+	list-style: none;
+}
+
+/* Linea que esta debajo del texto en las tareas*/
+.tareas .lista li {							
+	border-bottom: 1px solid #B6B6B6;
+}
+ 
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+/* Efecto de linea intermedia en el texto. Todos los elementos en estado Hover*/
+.tareas .lista li a:hover {
+	text-decoration: line-through;
+}
